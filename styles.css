@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Fuzzy%20Bubbles');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f3f4;
+    font-family: "Fuzzy Bubbles", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    background-color: #ddeedc;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1rem;
+    align-items: center;
+}
+
+#flag-num,
+#timer {
+    background-color: #ccddee;
+    padding: 0.2rem 1rem;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: white;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#flag-num>i,
+#timer>i {
+    color: #fb4499;
+    font-size: 2rem;
+    padding-right: 0.5rem;
+}
+
+#flag-num>span,
+#timer>span {
+    display: flex;
+    margin-top: 5px;
+}
+
+.row {
+    display: flex;
+}
+
+.box {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 2.5rem;
+    margin: 3px 2px;
+    border-radius: 5px;
+    font-weight: 900;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 3px 0 #ccddee;
+}
+
+.box>span {
+    margin-top: 8px;
+}
+
+.box-open {
+    background-color: #ccddee;
+    cursor: default;
+    pointer-events: none;
+}
+
+.box-open.bomb {
+    background-color: white;
+    font-size: 2rem;
+}
+
+.flag {
+    background-color: aquamarine;
+}
+
+#reload-btn {
+    display: flex;
+    background-color: #ccddee;
+    font-size: 3rem;
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    padding: 1.5rem;
+    border-radius: 5rem;
+    box-shadow: 3px 1px 5px grey;
+    cursor: pointer;
+}
